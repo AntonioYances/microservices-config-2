@@ -1,14 +1,13 @@
 server:
-  port: 8004
+  port: 8888
 
 spring:
   cloud:
     config:
       server:
         git:
-          default-label:
-          uri:
-          search-paths: config-data
+          default-label: main
+          uri: https://github.com/AntonioYances/microservices-config/tree/main/src/main/resources
 
 
 application:
