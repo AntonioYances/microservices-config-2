@@ -7,6 +7,7 @@ spring:
       server:
         git:
           uri: https://github.com/AntonioYances/microservices-config
+          search-paths: resources
 
 
 application:
