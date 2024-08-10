@@ -1,6 +1,8 @@
 server:
   port: ${port:${SERVER_PORT:0}}
 
+
+
 spring:
   application:
     zipkin: http://localhost:9411
@@ -63,3 +65,6 @@ management:
         include:
           - 'health'
           - 'circuitbreakers'
+  tracing:
+    sampling:
+      probability: 0
