@@ -16,17 +16,17 @@ spring:
     gateway:
       discovery:
         locator:
-          esabled: true
+          enabled: true
       routes:
         - id: user-service
           uri: lb://user-service
           predicates:
-            - path=/api/user/**
+            - Path=/api/user/**
         - id: car-service
           uri: lb://car-service
           predicates:
-            - path=/car/user/**
+            - Path=/api/car/**
         - id: bike-service
           uri: lb://bike-service
           predicates:
-            - path=/bike/user/**
+            - Path=/api/bike/**
